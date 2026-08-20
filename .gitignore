@@ -1,0 +1,31 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Runtime / dependencies
+node_modules/
+
+# Environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs
+*.log
+logs/
+
+# Temporary exports / local working files
+.tmp/
+tmp/
+*.bak
+*.swp
+
+# Local analytics/dashboard data
+local-data/
+private-data/
