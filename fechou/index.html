@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#08100d" />
+  <meta name="description" content="LucronomIA Fechou: organize um serviço já combinado pelo WhatsApp e gere um resumo profissional para confirmação." />
+  <title>LucronomIA Fechou — organize o combinado em 30 segundos</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#app">Ir para o formulário</a>
+
+  <header class="topbar">
+    <a class="brand" href="../" aria-label="LucronomIA">
+      <span class="brand-mark" aria-hidden="true">↗</span>
+      <span>Lucronom<span>IA</span></span>
+    </a>
+    <span class="product-badge">FECHOU</span>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">SERVIÇO JÁ COMBINADO</p>
+        <h1 id="hero-title">Combinou pelo WhatsApp? <span>Organize e confirme em 30 segundos.</span></h1>
+        <p class="lead">Transforme o que já foi acertado com o cliente em um resumo claro, profissional e pronto para confirmar por WhatsApp.</p>
+
+        <div class="hero-actions">
+          <button class="button primary" type="button" data-action="start">Organizar meu combinado</button>
+          <div class="price-block" aria-label="Preço">
+            <strong>R$ 9,90</strong>
+            <span>pagamento único</span>
+          </div>
+        </div>
+
+        <ul class="trust-list" aria-label="Características do produto">
+          <li>Sem cadastro</li>
+          <li>Sem mensalidade</li>
+          <li>Feito para celular</li>
+        </ul>
+      </div>
+
+      <aside class="hero-card" aria-label="Exemplo do resultado">
+        <div class="document-preview mini">
+          <div class="doc-kicker">RESUMO DO COMBINADO</div>
+          <h2>Instalação elétrica</h2>
+          <dl>
+            <div><dt>Cliente</dt><dd>Mariana Costa</dd></div>
+            <div><dt>Valor</dt><dd>R$ 450,00</dd></div>
+            <div><dt>Pagamento</dt><dd>50% de sinal + 50% na entrega</dd></div>
+            <div><dt>Prazo</dt><dd>Até 28/08/2026</dd></div>
+          </dl>
+          <span class="sample-tag">EXEMPLO</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="how-it-works" aria-labelledby="how-title">
+      <p class="eyebrow">COMO FUNCIONA</p>
+      <h2 id="how-title">O combinado continua sendo seu. A gente só coloca ordem.</h2>
+      <div class="steps">
+        <article><span>01</span><h3>Preencha</h3><p>Informe somente o que já foi acertado com o cliente.</p></article>
+        <article><span>02</span><h3>Confira</h3><p>Veja o resumo organizado antes de qualquer pagamento.</p></article>
+        <article><span>03</span><h3>Confirme</h3><p>Após o checkout, gere o PDF e abra a confirmação no WhatsApp.</p></article>
+      </div>
+    </section>
+
+    <section class="app-shell" id="app" aria-labelledby="form-title">
+      <div class="section-heading">
+        <p class="eyebrow">SEU COMBINADO</p>
+        <h2 id="form-title">Preencha só o essencial.</h2>
+        <p>Os dados ficam no seu navegador nesta V0. A LucronomIA não armazena o conteúdo do combinado em servidor próprio.</p>
+      </div>
+
+      <form id="deal-form" novalidate>
+        <div class="form-grid">
+          <label>
+            <span>Nome do prestador <b aria-hidden="true">*</b></span>
+            <input id="providerName" name="providerName" autocomplete="name" maxlength="100" required placeholder="Ex.: João da Silva" />
+          </label>
+
+          <label>
+            <span>Nome do cliente <b aria-hidden="true">*</b></span>
+            <input id="clientName" name="clientName" maxlength="100" required placeholder="Ex.: Mariana Costa" />
+          </label>
+
+          <label class="full">
+            <span>Serviço combinado <b aria-hidden="true">*</b></span>
+            <input id="service" name="service" maxlength="180" required placeholder="Ex.: Instalação de ar-condicionado" />
+          </label>
+
+          <label>
+            <span>Valor combinado <b aria-hidden="true">*</b></span>
+            <input id="amount" name="amount" inputmode="decimal" maxlength="30" required placeholder="Ex.: 450,00" />
+          </label>
+
+          <label>
+            <span>Data ou prazo <b aria-hidden="true">*</b></span>
+            <input id="deadline" name="deadline" maxlength="100" required placeholder="Ex.: Até 28/08/2026" />
+          </label>
+
+          <label class="full">
+            <span>Forma de pagamento <b aria-hidden="true">*</b></span>
+            <input id="paymentMethod" name="paymentMethod" maxlength="180" required placeholder="Ex.: 50% de sinal + 50% na entrega" />
+          </label>
+
+          <label>
+            <span>Entrada / sinal <small>opcional</small></span>
+            <input id="deposit" name="deposit" maxlength="120" placeholder="Ex.: R$ 225,00 via Pix" />
+          </label>
+
+          <label class="full">
+            <span>Detalhes adicionais <small>opcional</small></span>
+            <textarea id="details" name="details" rows="4" maxlength="1200" placeholder="Ex.: inclui instalação, teste e organização básica do local."></textarea>
+          </label>
+
+          <label class="full">
+            <span>Observações <small>opcional</small></span>
+            <textarea id="notes" name="notes" rows="3" maxlength="800" placeholder="Ex.: materiais não inclusos; acesso ao local por conta do cliente."></textarea>
+          </label>
+        </div>
+
+        <div class="form-footer">
+          <p><b>*</b> Campos obrigatórios</p>
+          <button class="button primary" type="submit">Gerar resumo</button>
+        </div>
+        <p id="form-error" class="form-error" role="alert" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="result-section" id="result" hidden aria-labelledby="result-title">
+      <div class="section-heading compact-heading">
+        <p class="eyebrow">PRÉVIA</p>
+        <h2 id="result-title">Confira antes de confirmar.</h2>
+        <p>Se algo estiver diferente do que foi combinado, volte ao formulário e ajuste.</p>
+      </div>
+
+      <article class="document-preview" id="document-preview" aria-label="Resumo do combinado">
+        <div class="doc-header">
+          <div>
+            <span class="doc-brand">Lucronom<span>IA</span> Fechou</span>
+            <p>Resumo do combinado</p>
+          </div>
+          <span id="preview-date" class="doc-date"></span>
+        </div>
+        <h3 id="preview-service"></h3>
+        <dl id="preview-fields"></dl>
+        <p class="document-note">Este documento organiza informações informadas pelas partes sobre um serviço já combinado. Não constitui serviço jurídico nem promessa de validade jurídica automática.</p>
+      </article>
+
+      <div class="edit-row">
+        <button class="button secondary" type="button" data-action="edit">Editar informações</button>
+      </div>
+
+      <section class="checkout-card" aria-labelledby="checkout-title">
+        <div>
+          <p class="eyebrow">LIBERAR PDF + WHATSAPP</p>
+          <h3 id="checkout-title">Uma vez. Sem assinatura.</h3>
+          <p>Finalize o pagamento de <strong data-price>R$ 9,90</strong>. Depois volte para esta página e confirme que concluiu o checkout.</p>
+          <p class="microcopy">A confirmação financeira oficial fica registrada no provedor de pagamento. Esta V0 não usa login nem validação automática por webhook.</p>
+        </div>
+        <div class="checkout-actions">
+          <button id="checkout-button" class="button primary" type="button">Pagar <span data-price>R$ 9,90</span></button>
+          <button id="payment-done-button" class="button ghost" type="button" hidden>Já concluí o pagamento</button>
+          <p id="checkout-status" class="checkout-status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="delivery-card" id="delivery" hidden aria-labelledby="delivery-title">
+        <div>
+          <p class="eyebrow">PRONTO PARA CONFIRMAR</p>
+          <h3 id="delivery-title">Seu combinado está organizado.</h3>
+          <p>Baixe o PDF e abra a mensagem pronta no WhatsApp.</p>
+        </div>
+        <div class="delivery-actions">
+          <button id="pdf-button" class="button primary" type="button">Baixar PDF</button>
+          <button id="whatsapp-button" class="button whatsapp" type="button">Abrir no WhatsApp</button>
+        </div>
+      </section>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-title">
+      <p class="eyebrow">SEM PEGADINHA</p>
+      <h2 id="faq-title">O que o Fechou é — e o que não é.</h2>
+      <details><summary>Ele cria orçamento?</summary><p>Não. O serviço já precisa ter sido combinado. O Fechou apenas organiza o que foi acertado.</p></details>
+      <details><summary>Isso é um contrato?</summary><p>Não apresentamos o resumo como contrato nem prometemos efeito jurídico automático. Ele serve para organizar e confirmar informações do serviço.</p></details>
+      <details><summary>Meus dados ficam salvos?</summary><p>Nesta V0, o conteúdo preenchido é processado no próprio navegador. Não há cadastro, conta de usuário nem histórico em nuvem.</p></details>
+      <details><summary>Tem mensalidade?</summary><p>Não. O preço de validação desta versão é de R$ 9,90 por uso, em pagamento único.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="../"><span class="brand-mark" aria-hidden="true">↗</span><span>Lucronom<span>IA</span></span></a>
+    <p>Menos hype. Mais contexto. Mais resultado.</p>
+    <nav aria-label="Links institucionais">
+      <a href="../privacy.html">Privacidade</a>
+      <a href="../terms.html">Termos</a>
+    </nav>
+  </footer>
+</body>
+</html>
