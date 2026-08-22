@@ -21,11 +21,16 @@ Este repositório reúne a documentação pública e os ativos técnicos que pod
 
 Ele também hospeda as páginas públicas do **LucronomIA Lean**, o painel local usado para acompanhar métricas de conteúdo, registrar checkpoints e apoiar decisões editoriais.
 
+### Produtos em validação
+
+- **LucronomIA Fechou (MONETIZAÇÃO-002)** — formalizador simples de serviços já combinados pelo WhatsApp. A V0 funciona no navegador, sem login, banco ou IA, e gera resumo, PDF e mensagem de confirmação para WhatsApp.
+
 ### Páginas públicas
 
 Quando o GitHub Pages está habilitado:
 
 - Home: `https://swtheaven.github.io/lucronomia/`
+- LucronomIA Fechou: `https://swtheaven.github.io/lucronomia/fechou/`
 - Privacy Policy: `https://swtheaven.github.io/lucronomia/privacy.html`
 - Terms of Service: `https://swtheaven.github.io/lucronomia/terms.html`
 
@@ -38,9 +43,15 @@ Quando o GitHub Pages está habilitado:
 │   ├── CONTENT_REGISTRY.md
 │   ├── EDITORIAL_GUIDE.md
 │   ├── FEED-001.md
+│   ├── MONETIZACAO-002-FECHOU-V0.md
 │   ├── PRODUCTION_CAPCUT.md
 │   ├── PROJECT_OVERVIEW.md
 │   └── SOCIAL_BIOS.md
+├── fechou/
+│   ├── app.js
+│   ├── config.js
+│   ├── index.html
+│   └── styles.css
 ├── index.html
 ├── privacy.html
 ├── styles.css
@@ -58,6 +69,7 @@ Quando o GitHub Pages está habilitado:
 - [Bios oficiais das redes](docs/SOCIAL_BIOS.md)
 - [Registro de conteúdos](docs/CONTENT_REGISTRY.md)
 - [FEED-001 — Manifesto LucronomIA](docs/FEED-001.md)
+- [MONETIZAÇÃO-002 — LucronomIA Fechou V0](docs/MONETIZACAO-002-FECHOU-V0.md)
 
 ## Princípios editoriais
 
@@ -88,6 +100,8 @@ O site público não deve conter credenciais de plataforma, tokens OAuth, chaves
 
 O **LucronomIA Lean** trabalha com integrações autorizadas e sua documentação pública descreve apenas o necessário para operação, privacidade e validação das plataformas.
 
+O **LucronomIA Fechou V0** processa o conteúdo do combinado no navegador e não exige conta de usuário nem armazenamento em nuvem próprio.
+
 ## Status
 
-A LucronomIA está em evolução contínua. Conteúdos, documentação e padrões de produção são atualizados conforme novas peças são aprovadas e entram na baseline oficial da marca.
+A LucronomIA está em evolução contínua. Conteúdos, documentação e padrões de produção são atualizados conforme novas peças e produtos são aprovados e entram na baseline oficial da marca.
