@@ -4,7 +4,7 @@
 **Status canônico:** `WAVE 1 — ACTIVATION IN PROGRESS`  
 **Orçamento:** `R$0`
 
-## 1. Correção de status determinada pelo C.O.
+## 1. Regra de status
 
 A prospecção externa está ativa, porém a distribuição externa ainda não está comprovadamente LIVE.
 
@@ -14,36 +14,27 @@ O status somente muda para `WAVE 1 LIVE` quando pelo menos um experimento for ef
 
 ### EXP-D001-W1-PAR-001 — Mundo da Elétrica
 - **Segmento:** eletricistas / profissionais da elétrica
-- **Data:** 2026-08-23
 - **Status:** abordagem enviada / sem distribuição comprovada
 - **Origem/ref:** `parceiro-mundo-da-eletrica`
 - **Custo:** R$0
-- **Visitas/prévias/checkout/vendas:** 0 comprovados até o momento
 
 ### EXP-D001-W1-PAR-002 — Sala da Elétrica
 - **Segmento:** eletricistas autônomos / profissionais da elétrica
-- **Data:** 2026-08-23
 - **Contato:** suporte@saladaeletrica.com.br
 - **Status:** abordagem enviada / sem distribuição comprovada
 - **Origem/ref:** `parceiro-sala-da-eletrica`
 - **Custo:** R$0
-- **Visitas/prévias/checkout/vendas:** 0 comprovados até o momento
 
 ### EXP-D001-W1-PAR-003 — Crossfox Elétrica / Conexão Crossfox
 - **Segmento:** profissionais e empresas do setor elétrico
-- **Data:** 2026-08-23
 - **Contato:** contato@crossfoxeletrica.com.br
 - **Status:** abordagem enviada / sem distribuição comprovada
 - **Origem/ref:** `parceiro-crossfox-eletrica`
 - **Custo:** R$0
-- **Visitas/prévias/checkout/vendas:** 0 comprovados até o momento
 
 ### EXP-D001-W1-PAR-004 — AMEI-MEI / Portal do MEI
-- **Canal:** parceria institucional / performance a negociar somente com aprovação do C.O.
 - **Segmento:** MEIs / microempresas / prestadores
-- **Data:** 2026-08-23
-- **Contato público:** contato@mei.org.br
-- **Mensagem/oferta:** ferramenta para organizar serviço já combinado pelo WhatsApp; teste sem cachê antecipado
+- **Contato:** contato@mei.org.br
 - **Status:** abordagem enviada / sem distribuição comprovada
 - **Origem/ref:** `parceiro-amei-mei`
 - **Link enviado:** `https://swtheaven.github.io/DEV-Lean/confirma/?ref=parceiro-amei-mei`
@@ -51,11 +42,8 @@ O status somente muda para `WAVE 1 LIVE` quando pelo menos um experimento for ef
 - **Custo:** R$0
 
 ### EXP-D001-W1-PAR-005 — Escola de MEI
-- **Canal:** parceria com comunidade/educação para MEIs
 - **Segmento:** MEIs / empreendedores informais / prestadores
-- **Data:** 2026-08-23
-- **Contato público:** falecom@escolademei.com
-- **Mensagem/oferta:** teste de distribuição por performance; sem cachê antecipado e sem comissão definitiva nesta etapa
+- **Contato:** falecom@escolademei.com
 - **Status:** abordagem enviada / sem distribuição comprovada
 - **Origem/ref:** `parceiro-escola-de-mei`
 - **Link enviado:** `https://swtheaven.github.io/DEV-Lean/confirma/?ref=parceiro-escola-de-mei`
@@ -63,53 +51,59 @@ O status somente muda para `WAVE 1 LIVE` quando pelo menos um experimento for ef
 - **Custo:** R$0
 
 ### EXP-D001-W1-PAR-006 — Universo MEI
-- **Canal:** parceria editorial/comunidade MEI
 - **Segmento:** MEIs / pequenos prestadores
-- **Data:** 2026-08-23
-- **Contato público:** contato@universomei.com
-- **Mensagem/oferta:** divulgação/parceria sem cachê antecipado; eventual performance somente após alinhamento
+- **Contato:** contato@universomei.com
 - **Status:** abordagem enviada / sem distribuição comprovada
 - **Origem/ref:** `parceiro-universo-mei`
 - **Link enviado:** `https://swtheaven.github.io/DEV-Lean/confirma/?ref=parceiro-universo-mei`
 - **Gmail message id:** `1a03184fd038a4ce`
 - **Custo:** R$0
 
+### EXP-D001-W1-PAR-007 — Clube da Foto Brasil
+- **Canal:** parceria com comunidade profissional
+- **Segmento:** fotógrafos / videomakers / prestadores audiovisuais
+- **Contato público:** contato@clubedafoto.com.br
+- **Justificativa:** comunidade declara mais de 500 profissionais e possui programa/parceria explícita; fotógrafos negociam serviço, valor, data, escopo e entrega com clientes
+- **Status:** `ID + ref reservados / abordagem pendente`
+- **Origem/ref:** `parceiro-clube-da-foto`
+- **Custo:** R$0
+
+### EXP-D001-W1-PAR-008 — AgendaFoto
+- **Canal:** parceria com plataforma de fotógrafos
+- **Segmento:** fotógrafos profissionais
+- **Contato público:** contato@agendafoto.com.br
+- **Justificativa:** audiência de fotógrafos profissionais e operação voltada ao relacionamento/agendamento com clientes
+- **Status:** `ID + ref reservados / abordagem pendente`
+- **Origem/ref:** `parceiro-agendafoto`
+- **Custo:** R$0
+
 ## 3. Comunidades e canais próprios com atribuição reservada
 
-### EXP-D001-W1-COM-001
-- **Canal:** comunidade profissional
-- **Comunidade-alvo:** r/empreendedorismo
+### EXP-D001-W1-COM-001 — r/empreendedorismo
 - **Segmento:** pequenos negócios / prestadores / autônomos
 - **Status:** mapeado / publicação não executada por regra contra autopromoção sem autorização
 - **Origem/ref:** `reddit-empreendedorismo-wave1`
-- **Custo:** R$0
 
-### EXP-D001-W1-OWN-001
-- **Canal:** Instagram LucronomIA
-- **Segmento:** prestadores / MEIs / freelancers
-- **Status:** ID + ref reservados / publicação pendente pela frente Mídia Lean
+### EXP-D001-W1-OWN-001 — Instagram LucronomIA
+- **Status:** publicação pendente pela frente Mídia Lean
 - **Origem/ref:** `lucronomia-instagram-confirma-wave1`
-- **Custo:** R$0
 
-### EXP-D001-W1-OWN-002
-- **Canal:** TikTok LucronomIA
-- **Segmento:** prestadores / MEIs / freelancers
-- **Status:** ID + ref reservados / publicação pendente pela frente Mídia Lean
+### EXP-D001-W1-OWN-002 — TikTok LucronomIA
+- **Status:** publicação pendente pela frente Mídia Lean
 - **Origem/ref:** `lucronomia-tiktok-confirma-wave1`
-- **Custo:** R$0
 
-### EXP-D001-W1-OWN-003
-- **Canal:** YouTube Shorts LucronomIA
-- **Segmento:** prestadores / MEIs / freelancers
-- **Status:** ID + ref reservados / publicação pendente pela frente Mídia Lean
+### EXP-D001-W1-OWN-003 — YouTube Shorts LucronomIA
+- **Status:** publicação pendente pela frente Mídia Lean
 - **Origem/ref:** `lucronomia-youtube-confirma-wave1`
-- **Custo:** R$0
+
+Handoff Mídia Lean criado em `docs/reports/DISTRIBUICAO-001-HANDOFF-MIDIA-WAVE1-OWNED-CHANNELS-2026-08-23.md`.
 
 ## 4. Situação operacional
 
 - **Parceiros abordados:** 6
-- **Verticais em prospecção:** elétrica + MEIs/prestadores
-- **Custo acumulado de mídia/parceria:** R$0
+- **Parceiros adicionais com ID/ref reservados:** 2
+- **Verticais:** elétrica + MEIs/prestadores + fotografia
+- **Custo acumulado:** R$0
 - **Distribuição comprovada para audiência externa:** ainda não
 - **Venda externa comprovada:** ainda não
 
@@ -123,7 +117,8 @@ O status somente muda para `WAVE 1 LIVE` quando pelo menos um experimento for ef
 - não vender como contrato jurídico, CRM, orçamento automático ou IA;
 - nenhuma comissão definitiva sem retorno ao C.O.;
 - nenhum cachê antecipado;
-- toda ação recebe ID + origem/ref antes da exposição.
+- toda ação recebe ID + origem/ref antes da exposição;
+- atribuição da Wave 1 permanece manual/operacional conforme decisão do C.O.; não acionar DEV para instrumentação nova.
 
 ## 6. Gates
 
