@@ -1,9 +1,21 @@
 # HANDOFF COMERCIAL → MÍDIA LEAN — DISTRIBUIÇÃO-001 / WAVE 1
 
 **Data:** 2026-08-23  
-**Status:** `ATIVAR CANAIS PRÓPRIOS`  
+**Status:** `ATIVAÇÃO PRIORITÁRIA — NÃO AGUARDAR PARCEIROS`  
 **Orçamento:** `R$0`  
 **Produto:** LucronomIA Confirma
+
+## Ordem operacional do C.O.
+
+Canais próprios passaram a ser a **prioridade nº 1** da Wave 1.
+
+Não aguardar resposta dos parceiros para publicar.
+
+Gate comercial a desbloquear:
+
+> primeira exposição real a audiência externa com origem/ref identificável → `WAVE 1 LIVE`
+
+A primeira publicação rastreável já é suficiente para o gate de status; os demais canais seguem na sequência normal de produção.
 
 ## Objetivo comercial
 
@@ -29,31 +41,31 @@ Promessa oficial:
 
 Sem desconto, cupom ou alteração de preço.
 
-## Experimentos obrigatórios
+## Ordem de ativação recomendada
 
-### EXP-D001-W1-OWN-001 — Instagram
+### 1. EXP-D001-W1-OWN-001 — Instagram
 **Ref:** `lucronomia-instagram-confirma-wave1`
 
-Link rastreável previsto:
+Link:
 `https://swtheaven.github.io/DEV-Lean/confirma/?ref=lucronomia-instagram-confirma-wave1`
 
-Objetivo criativo: apresentar conflito de entendimento após um acordo informal e mostrar o Confirma como organização do combinado.
+Publicar primeiro por permitir CTA/link de forma mais controlável no ecossistema da marca. Se o formato escolhido não tiver link clicável direto, usar o mesmo link rastreável no ponto clicável disponível e registrar exatamente onde foi colocado.
 
-### EXP-D001-W1-OWN-002 — TikTok
+### 2. EXP-D001-W1-OWN-002 — TikTok
 **Ref:** `lucronomia-tiktok-confirma-wave1`
 
-Link rastreável previsto:
+Link:
 `https://swtheaven.github.io/DEV-Lean/confirma/?ref=lucronomia-tiktok-confirma-wave1`
 
-Objetivo criativo: vídeo curto com situação realista e CTA simples.
+Vídeo curto com conflito realista e CTA simples.
 
-### EXP-D001-W1-OWN-003 — YouTube Shorts
+### 3. EXP-D001-W1-OWN-003 — YouTube Shorts
 **Ref:** `lucronomia-youtube-confirma-wave1`
 
-Link rastreável previsto:
+Link:
 `https://swtheaven.github.io/DEV-Lean/confirma/?ref=lucronomia-youtube-confirma-wave1`
 
-Objetivo criativo: mesma tese comercial, adaptada ao Short.
+Mesma tese comercial adaptada ao Short.
 
 ## Claims autorizados
 
@@ -77,22 +89,19 @@ Não comunicar:
 
 ## CTA
 
-CTA principal:
-
 > **Teste a prévia grátis.**
 
-Evitar CTA agressivo de compra na abertura. Mostrar dor → solução → preço/CTA.
+Evitar CTA agressivo na abertura. Dor → demonstração → oferta → CTA.
 
 ## Retorno obrigatório ao Comercial
 
-Para cada publicação:
+Assim que o primeiro post estiver publicado, retornar imediatamente com:
 - ID do experimento;
 - plataforma;
 - data/hora;
 - URL do post;
-- alcance/views;
-- cliques, se disponível;
-- comentários/objeções relevantes;
+- local exato do link rastreável;
+- alcance/views inicial quando disponível;
 - origem/ref usada.
 
-O Comercial cruzará esses dados com checkout, compra e uso.
+Esse retorno permitirá ao Comercial alterar o status para `WAVE 1 LIVE` quando a exposição externa estiver comprovada.
