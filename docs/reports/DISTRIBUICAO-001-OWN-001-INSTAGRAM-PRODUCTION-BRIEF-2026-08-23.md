@@ -1,21 +1,76 @@
 # DISTRIBUIÇÃO-001 — OWN-001 INSTAGRAM — PRODUCTION BRIEF
 
 **Data:** 2026-08-23  
-**Status:** `READY TO PUBLISH — MÍDIA LEAN`  
+**Status canônico:** `READY FOR CAPCUT`  
 **Experimento:** `EXP-D001-W1-OWN-001`  
 **Canal:** Instagram LucronomIA  
 **Origem/ref:** `lucronomia-instagram-confirma-wave1`  
 **Orçamento:** `R$0`
 
+## Governança / trava de escopo
+
+Este brief incorpora o handoff do C.O. para OWN-001.
+
+Até a auditoria do Reel renderizado, ficam **travados**:
+- preço;
+- pacote;
+- promessa;
+- desconto;
+- posicionamento;
+- experiment ID;
+- origem/ref.
+
+Nenhuma publicação está autorizada antes do gate:
+
+> `REEL RENDERIZADO → AUDITORIA C.O. → GO/NO-GO PUBLICAÇÃO`
+
 ## Objetivo
 
-Executar a primeira exposição real e rastreável do LucronomIA Confirma para audiência externa e destravar o gate operacional `WAVE 1 LIVE`.
+Produzir a primeira peça de aquisição rastreável do LucronomIA Confirma para Instagram, preservando integralmente a atribuição de origem.
 
-## Link rastreável obrigatório
+## Atribuição obrigatória OWN-001
+
+**Experiment ID:**
+`EXP-D001-W1-OWN-001`
+
+**Ref canônica:**
+`lucronomia-instagram-confirma-wave1`
+
+**Único link rastreável autorizado para este experimento:**
 
 `https://swtheaven.github.io/DEV-Lean/confirma/?ref=lucronomia-instagram-confirma-wave1`
 
-O mesmo link deve ser colocado no ponto clicável usado pela publicação/perfil. Registrar exatamente onde ficou disponível.
+### Regra obrigatória de link
+
+O ponto clicável utilizado no Instagram deve apontar exatamente para a URL acima, preservando o parâmetro:
+
+`?ref=lucronomia-instagram-confirma-wave1`
+
+Não remover, abreviar, substituir ou reutilizar ref de outro experimento.
+
+Antes do GO de publicação, conferir manualmente que o link clicável abre a aplicação com essa ref intacta.
+
+## Criativo aprovado
+
+Dor do combinado informal no WhatsApp
+→ dúvida posterior
+→ organização pelo Confirma
+→ prévia / PDF / WhatsApp
+→ preço
+→ CTA.
+
+## Promessa preservada
+
+> **Combinou pelo WhatsApp? Organize e confirme em 30 segundos.**
+
+## Oferta preservada
+
+- 5 confirmações — R$9,90
+- pagamento único
+- sem mensalidade
+- prévia grátis
+
+Nenhum desconto, cupom ou alteração de preço está autorizado.
 
 ## Formato recomendado
 
@@ -98,7 +153,8 @@ O **LucronomIA Confirma** organiza aquilo que você já combinou com o cliente e
 7. Música apenas como fundo; voz/texto deve dominar.
 8. Logo LucronomIA discreto no fechamento.
 9. Exportar H.264, 1080p, 30 fps, qualidade alta.
-10. Antes de publicar, revisar ortografia, preço e claim jurídico.
+10. Antes de entregar para auditoria, revisar ortografia, preço, claim jurídico e CTA.
+11. Não publicar. Entregar o Reel renderizado ao C.O. para `GO/NO-GO`.
 
 ## Claims proibidos
 
@@ -111,31 +167,29 @@ Não usar:
 - IA;
 - leitura automática do WhatsApp.
 
-## Checklist de publicação
+## Checklist READY FOR CAPCUT
 
-Antes de publicar:
-- [ ] link rastreável correto configurado no ponto clicável;
-- [ ] preço R$9,90 correto;
-- [ ] CTA `Teste a prévia grátis`;
-- [ ] sem desconto/cupom;
-- [ ] sem claim jurídico;
-- [ ] Reel exportado 9:16;
-- [ ] experimento registrado como `EXP-D001-W1-OWN-001`.
+- [x] `EXP-D001-W1-OWN-001` preservado;
+- [x] ref `lucronomia-instagram-confirma-wave1` preservada;
+- [x] link clicável canônico definido;
+- [x] preço R$9,90 travado;
+- [x] pacote de 5 confirmações travado;
+- [x] promessa travada;
+- [x] sem desconto/cupom;
+- [x] sem mudança de posicionamento;
+- [x] roteiro aprovado;
+- [ ] Reel produzido no CapCut;
+- [ ] Reel renderizado 9:16;
+- [ ] link clicável testado com a ref intacta;
+- [ ] auditoria C.O.;
+- [ ] GO de publicação.
 
-Depois de publicar, retornar ao Comercial com:
-- URL do Reel;
-- data/hora;
-- confirmação de onde o link rastreável está clicável;
-- ref usada;
-- views/alcance inicial quando disponível;
-- comentários/objeções relevantes.
+## Próximo gate
 
-## Gate
+> `REEL RENDERIZADO → AUDITORIA C.O. → GO/NO-GO PUBLICAÇÃO`
 
-A publicação efetiva deste Reel para audiência externa, com ref verificável, é suficiente para alterar o status operacional para:
+Somente após `GO` do C.O. e publicação efetiva para audiência externa com ref verificável o Comercial poderá reconciliar o gate operacional de distribuição.
 
-> `WAVE 1 LIVE`
-
-O gate econômico permanece:
+Gate econômico permanece:
 
 > `FIRST EXTERNAL SALE`
