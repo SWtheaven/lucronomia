@@ -62,19 +62,23 @@ O status somente muda para `WAVE 1 LIVE` quando pelo menos um experimento for ef
 ### EXP-D001-W1-PAR-007 — Clube da Foto Brasil
 - **Canal:** parceria com comunidade profissional
 - **Segmento:** fotógrafos / videomakers / prestadores audiovisuais
-- **Contato público:** contato@clubedafoto.com.br
+- **Contato:** contato@clubedafoto.com.br
 - **Justificativa:** comunidade declara mais de 500 profissionais e possui programa/parceria explícita; fotógrafos negociam serviço, valor, data, escopo e entrega com clientes
-- **Status:** `ID + ref reservados / abordagem pendente`
+- **Status:** abordagem enviada / sem distribuição comprovada
 - **Origem/ref:** `parceiro-clube-da-foto`
+- **Link enviado:** `https://swtheaven.github.io/DEV-Lean/confirma/?ref=parceiro-clube-da-foto`
+- **Gmail message id:** `1a03186b34cf81f8`
 - **Custo:** R$0
 
 ### EXP-D001-W1-PAR-008 — AgendaFoto
 - **Canal:** parceria com plataforma de fotógrafos
 - **Segmento:** fotógrafos profissionais
-- **Contato público:** contato@agendafoto.com.br
+- **Contato:** contato@agendafoto.com.br
 - **Justificativa:** audiência de fotógrafos profissionais e operação voltada ao relacionamento/agendamento com clientes
-- **Status:** `ID + ref reservados / abordagem pendente`
+- **Status:** abordagem enviada / sem distribuição comprovada
 - **Origem/ref:** `parceiro-agendafoto`
+- **Link enviado:** `https://swtheaven.github.io/DEV-Lean/confirma/?ref=parceiro-agendafoto`
+- **Gmail message id:** `1a03186cdfa89f5a`
 - **Custo:** R$0
 
 ## 3. Comunidades e canais próprios com atribuição reservada
@@ -100,12 +104,12 @@ Handoff Mídia Lean criado em `docs/reports/DISTRIBUICAO-001-HANDOFF-MIDIA-WAVE1
 
 ## 4. Situação operacional
 
-- **Parceiros abordados:** 6
-- **Parceiros adicionais com ID/ref reservados:** 2
+- **Parceiros abordados:** 8
 - **Verticais:** elétrica + MEIs/prestadores + fotografia
 - **Custo acumulado:** R$0
 - **Distribuição comprovada para audiência externa:** ainda não
 - **Venda externa comprovada:** ainda não
+- **Respostas recebidas dos parceiros no último check:** 0
 
 ## 5. Regras comerciais vigentes
 
