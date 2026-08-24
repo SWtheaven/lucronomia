@@ -8,7 +8,25 @@
 
 Segunda rodada de prospecção externa executada sem aguardar resposta dos primeiros parceiros.
 
-## Novos experimentos executados
+## Reconciliação obrigatória do inventário
+
+O `PAR-003` **existe** e foi confirmado por evidência operacional verificável.
+
+### EXP-D001-W1-PAR-003
+- **Parceiro:** Crossfox Elétrica / Conexão Crossfox
+- **Canal:** parceria por performance
+- **Segmento:** profissionais e empresas do setor elétrico
+- **Ref:** `parceiro-crossfox-eletrica`
+- **Contato utilizado:** `contato@crossfoxeletrica.com.br`
+- **Ação:** proposta comercial enviada pelo Gmail oficial da LucronomIA
+- **Assunto:** `Parceria com prestadores da elétrica — LucronomIA Confirma`
+- **Gmail message id:** `1a031802acac4e01`
+- **Status:** abordagem enviada / sem distribuição comprovada
+- **Custo:** R$0
+
+Assim, a contagem acumulada de **8 parceiros abordados está reconciliada** e não foi criado nenhum experimento retrospectivo para preencher numeração.
+
+## Novos experimentos executados no Batch 02
 
 - `EXP-D001-W1-PAR-004` — AMEI-MEI / Portal do MEI — ref `parceiro-amei-mei`
 - `EXP-D001-W1-PAR-005` — Escola de MEI — ref `parceiro-escola-de-mei`
@@ -18,9 +36,9 @@ Segunda rodada de prospecção externa executada sem aguardar resposta dos prime
 
 Todos receberam abordagem sem cachê antecipado e sem comissão definitiva prometida.
 
-## Estado acumulado
+## Estado acumulado reconciliado
 
-- parceiros abordados: 8;
+- parceiros abordados: 8 (`PAR-001` a `PAR-008`, incluindo `PAR-003` Crossfox);
 - verticais cobertas: elétrica, MEIs/prestadores e fotografia;
 - respostas recebidas no último check: 0;
 - distribuição comprovada para audiência externa: 0;
@@ -40,6 +58,13 @@ A execução/publicação permanece responsabilidade da frente Mídia Lean.
 
 `r/empreendedorismo` segue mapeado, mas não recebeu publicação promocional por possuir regra contra autopromoção sem autorização. Não será usado como atalho de spam para cumprir o gate.
 
+## Prioridade operacional após ajuste do C.O.
+
+1. ativação rastreada dos canais próprios;
+2. comunidades profissionais onde divulgação seja permitida;
+3. microparceiros adicionais;
+4. follow-up dos parceiros já abordados em cadência não invasiva.
+
 ## DEV
 
 Nenhum bug ou correção técnica comprovada nesta etapa. DEV permanece em estabilidade/hotfix only conforme handoff do C.O.; atribuição da Wave 1 é manual/operacional.
@@ -53,3 +78,5 @@ Mudar para `WAVE 1 LIVE` somente quando pelo menos um experimento for efetivamen
 Gate econômico principal permanece:
 
 > `FIRST EXTERNAL SALE`
+
+Retornar ao C.O. antes disso somente se houver resposta comercial relevante, ativação real de audiência ou objeção/padrão que exija decisão de oferta.
