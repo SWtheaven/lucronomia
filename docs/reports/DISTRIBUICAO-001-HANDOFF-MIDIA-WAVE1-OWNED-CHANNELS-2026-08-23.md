@@ -7,7 +7,7 @@
 
 ## Ordem operacional do C.O.
 
-Canais próprios passaram a ser a **prioridade nº 1** da Wave 1.
+Canais próprios são a **prioridade nº 1** da Wave 1.
 
 Não aguardar resposta dos parceiros para publicar.
 
@@ -17,55 +17,38 @@ Gate comercial a desbloquear:
 
 A primeira publicação rastreável já é suficiente para o gate de status; os demais canais seguem na sequência normal de produção.
 
-## Objetivo comercial
+## Prioridade imediata
 
-Gerar a primeira exposição rastreável do Confirma nos canais próprios e buscar `FIRST EXTERNAL SALE` sem tráfego pago.
+### EXP-D001-W1-OWN-001 — Instagram
 
-A peça não deve começar como anúncio de app. Deve começar pela dor:
+**EXECUTAR PRIMEIRO.**
 
-> serviço fechado pelo WhatsApp → depois surgem dúvidas sobre valor, prazo, forma de pagamento ou o que estava incluído.
+Production brief completo e publicável:
 
-Promessa oficial:
+`docs/reports/DISTRIBUICAO-001-OWN-001-INSTAGRAM-PRODUCTION-BRIEF-2026-08-23.md`
 
-> **Combinou pelo WhatsApp? Organize e confirme em 30 segundos.**
-
-## Oferta oficial
-
-- 5 confirmações — R$9,90
-- 20 confirmações — R$24,90
-- 50 confirmações — R$49,90
-- pagamento único
-- sem mensalidade
-- créditos não expiram
-- prévia grátis
-
-Sem desconto, cupom ou alteração de preço.
-
-## Ordem de ativação recomendada
-
-### 1. EXP-D001-W1-OWN-001 — Instagram
 **Ref:** `lucronomia-instagram-confirma-wave1`
 
-Link:
+**Link rastreável:**
 `https://swtheaven.github.io/DEV-Lean/confirma/?ref=lucronomia-instagram-confirma-wave1`
 
-Publicar primeiro por permitir CTA/link de forma mais controlável no ecossistema da marca. Se o formato escolhido não tiver link clicável direto, usar o mesmo link rastreável no ponto clicável disponível e registrar exatamente onde foi colocado.
+A Mídia Lean deve produzir/publicar o Reel conforme o brief, usando a identidade visual existente e CapCut. Não aguardar aprovação adicional de parceiro.
 
-### 2. EXP-D001-W1-OWN-002 — TikTok
+Após publicação, retornar imediatamente ao Comercial com URL do Reel, data/hora, local clicável do link, ref usada, alcance inicial e objeções/comentários relevantes.
+
+## Sequência após OWN-001
+
+### EXP-D001-W1-OWN-002 — TikTok
 **Ref:** `lucronomia-tiktok-confirma-wave1`
 
 Link:
 `https://swtheaven.github.io/DEV-Lean/confirma/?ref=lucronomia-tiktok-confirma-wave1`
 
-Vídeo curto com conflito realista e CTA simples.
-
-### 3. EXP-D001-W1-OWN-003 — YouTube Shorts
+### EXP-D001-W1-OWN-003 — YouTube Shorts
 **Ref:** `lucronomia-youtube-confirma-wave1`
 
 Link:
 `https://swtheaven.github.io/DEV-Lean/confirma/?ref=lucronomia-youtube-confirma-wave1`
-
-Mesma tese comercial adaptada ao Short.
 
 ## Claims autorizados
 
