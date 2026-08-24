@@ -38,18 +38,19 @@ O status somente muda para `WAVE 1 LIVE` quando pelo menos um experimento for ef
 - **Origem/ref:** `parceiro-sala-da-eletrica`
 - **Visitas/prévias/checkout/vendas:** 0 comprovados até o momento
 
-## 3. Novos experimentos abertos antes da exposição
-
 ### EXP-D001-W1-PAR-003
 - **Canal:** parceria por performance
 - **Parceiro-alvo:** Crossfox Elétrica / Conexão Crossfox
 - **Segmento:** profissionais e empresas do setor elétrico
 - **Data:** 2026-08-23
-- **Contato previsto:** contato comercial público da empresa
+- **Contato:** contato@crossfoxeletrica.com.br
 - **Mensagem/oferta:** convite para avaliar parceria de distribuição do LucronomIA Confirma, sem cachê antecipado e sem comissão definitiva definida nesta etapa
-- **Status:** `ID + ref reservados antes da abordagem`
+- **Status:** abordagem enviada / sem distribuição comprovada
 - **Origem/ref:** `parceiro-crossfox-eletrica`
 - **Custo:** R$0
+- **Visitas/prévias/checkout/vendas:** 0 comprovados até o momento
+
+## 3. Comunidades e canais próprios com atribuição reservada
 
 ### EXP-D001-W1-COM-001
 - **Canal:** comunidade profissional
