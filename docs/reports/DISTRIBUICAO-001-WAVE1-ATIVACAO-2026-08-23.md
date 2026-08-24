@@ -50,6 +50,39 @@ O status somente muda para `WAVE 1 LIVE` quando pelo menos um experimento for ef
 - **Custo:** R$0
 - **Visitas/prévias/checkout/vendas:** 0 comprovados até o momento
 
+### EXP-D001-W1-PAR-004
+- **Canal:** parceria institucional / performance a negociar somente com aprovação do C.O.
+- **Parceiro-alvo:** AMEI-MEI / Portal do MEI
+- **Segmento:** MEIs / microempresas / prestadores
+- **Data:** 2026-08-23
+- **Contato público:** contato@mei.org.br
+- **Mensagem/oferta:** apresentar o Confirma como ferramenta simples para organizar serviços já combinados pelo WhatsApp; propor avaliação de parceria/divulgação sem cachê antecipado
+- **Status:** `ID + ref reservados / abordagem pendente`
+- **Origem/ref:** `parceiro-amei-mei`
+- **Custo:** R$0
+
+### EXP-D001-W1-PAR-005
+- **Canal:** parceria com comunidade/educação para MEIs
+- **Parceiro-alvo:** Escola de MEI
+- **Segmento:** MEIs / empreendedores informais / prestadores
+- **Data:** 2026-08-23
+- **Contato público:** falecom@escolademei.com
+- **Mensagem/oferta:** apresentar o Confirma e propor teste/divulgação por performance, sem cachê antecipado e sem comissão definitiva nesta etapa
+- **Status:** `ID + ref reservados / abordagem pendente`
+- **Origem/ref:** `parceiro-escola-de-mei`
+- **Custo:** R$0
+
+### EXP-D001-W1-PAR-006
+- **Canal:** parceria editorial/comunidade MEI
+- **Parceiro-alvo:** Universo MEI
+- **Segmento:** MEIs / pequenos prestadores
+- **Data:** 2026-08-23
+- **Contato público:** contato@universomei.com
+- **Mensagem/oferta:** apresentar o Confirma como solução prática de organização do combinado e propor divulgação/parceria sem cachê antecipado
+- **Status:** `ID + ref reservados / abordagem pendente`
+- **Origem/ref:** `parceiro-universo-mei`
+- **Custo:** R$0
+
 ## 3. Comunidades e canais próprios com atribuição reservada
 
 ### EXP-D001-W1-COM-001
@@ -108,7 +141,7 @@ Registrar sempre que disponível:
 - ID;
 - data;
 - canal;
-- comunidade/parceiro/post;
+- parceiro/comunidade/post;
 - segmento/profissão;
 - mensagem/oferta;
 - origem/ref;
