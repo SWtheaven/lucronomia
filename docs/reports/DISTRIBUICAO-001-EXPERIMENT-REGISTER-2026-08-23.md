@@ -16,7 +16,7 @@
 | EXP-D001-W1-PAR-006 | Universo MEI | MEI/prestadores | `parceiro-universo-mei` | abordagem enviada |
 | EXP-D001-W1-PAR-007 | Clube da Foto Brasil | fotografia | `parceiro-clube-da-foto` | abordagem enviada |
 | EXP-D001-W1-PAR-008 | AgendaFoto | fotografia | `parceiro-agendafoto` | abordagem enviada |
-| EXP-D001-W1-PAR-009 | Ubiz Resolve | prestadores locais / autônomos / MEIs | `parceiro-ubiz-resolve` | **reservado antes da abordagem** |
+| EXP-D001-W1-PAR-009 | Ubiz Resolve | prestadores locais / autônomos / MEIs | `parceiro-ubiz-resolve` | abordagem enviada — Gmail `1a031a9d0f1bdd76` |
 
 ## Comunidades
 
