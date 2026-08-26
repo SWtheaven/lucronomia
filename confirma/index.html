@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#08100d">
+  <title>LucronomIA Confirma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="form-enhancements.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="pdf-professional.js"></script>
+  <script defer src="sales-hardening.js"></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="https://lucronomia.com.br/">
+      <img class="brand-mark" src="../assets/logo-mark.png" alt="">
+      Lucronom<span class="accent">IA</span><span class="product-tag">Confirma</span>
+    </a>
+    <div class="actions">
+      <div id="wallet-pill" class="pill">Saldo: —</div>
+      <button id="copy-access" class="secondary" type="button">Copiar acesso</button>
+      <a class="secondary support-link" href="mailto:lucronomiaofc@gmail.com?subject=Suporte%20-%20LucronomIA%20Confirma">Suporte</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">SERVIÇO JÁ COMBINADO</p>
+      <h1>Combinou pelo WhatsApp? <span>Organize e confirme em 30 segundos.</span></h1>
+      <p>Prévia grátis. Você só usa 1 confirmação quando finaliza um novo documento.</p>
+      <button data-start class="primary">Organizar meu combinado</button>
+    </section>
+
+    <section class="packages">
+      <h2>Escolha seu pacote</h2>
+      <p>Pagamento único. Sem mensalidade. Créditos não expiram.</p>
+      <div id="packages" class="package-grid"></div>
+    </section>
+
+    <section id="form-section" class="card">
+      <h2>Seu combinado</h2>
+      <form id="deal-form">
+        <div class="grid">
+          <label>Prestador<input name="providerName" required maxlength="100" autocomplete="name"></label>
+          <label>Cliente<input name="clientName" required maxlength="100" autocomplete="off"></label>
+          <label class="full">Serviço combinado<input name="service" required maxlength="180" autocomplete="off"></label>
+
+          <label>
+            Valor combinado
+            <span class="input-prefix">
+              <span aria-hidden="true">R$</span>
+              <input name="amountRaw" required inputmode="decimal" maxlength="24" placeholder="0,00" autocomplete="off" aria-label="Valor combinado em reais">
+            </span>
+            <input name="amount" type="hidden" value="">
+          </label>
+
+          <label>
+            Data do combinado
+            <input name="deadlineRaw" type="date" required aria-label="Data do combinado">
+            <input name="deadline" type="hidden" value="">
+          </label>
+
+          <label class="full">
+            Forma de pagamento
+            <select name="paymentMethod" required>
+              <option value="" selected disabled>Selecione a forma de pagamento</option>
+              <option value="Dinheiro">Dinheiro</option>
+              <option value="Pix">Pix</option>
+              <option value="Cartão de crédito">Cartão de crédito</option>
+              <option value="Cartão de débito">Cartão de débito</option>
+            </select>
+          </label>
+
+          <label>Entrada / sinal <small>opcional</small><input name="deposit" maxlength="120" placeholder="Ex.: R$ 200,00 ou 30%" autocomplete="off"></label>
+          <label class="full">Detalhes adicionais <small>opcional</small><textarea name="details" maxlength="1200"></textarea></label>
+          <label class="full">Observações <small>opcional</small><textarea name="notes" maxlength="800"></textarea></label>
+        </div>
+        <button class="primary" type="submit">Gerar prévia grátis</button>
+        <p id="form-error" class="error"></p>
+      </form>
+    </section>
+
+    <section id="preview" class="card" hidden>
+      <h2>Prévia</h2>
+      <article id="document" class="document"></article>
+      <div class="actions">
+        <button id="edit" class="secondary">Editar</button>
+        <button id="finalize" class="primary">Finalizar confirmação</button>
+      </div>
+      <p id="finalize-status"></p>
+    </section>
+
+    <section id="purchase" class="card" hidden>
+      <h2>Você precisa de confirmações</h2>
+      <p>Escolha um pacote. O documento só será finalizado depois que o pagamento for aprovado e houver saldo.</p>
+      <div id="purchase-packages" class="package-grid"></div>
+    </section>
+
+    <section id="delivery" class="card" hidden>
+      <h2>Confirmação finalizada</h2>
+      <p id="balance-message"></p>
+      <div class="actions">
+        <button id="pdf" class="primary">Baixar PDF</button>
+        <button id="whatsapp" class="whatsapp">Enviar resumo + PDF</button>
+        <button id="new-doc" class="secondary">Nova confirmação</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    Organização do combinado; não é serviço jurídico nem promessa de validade jurídica automática.
+    O link de acesso à carteira funciona como uma chave: guarde-o e não compartilhe com terceiros.
+    Precisa de ajuda? <a href="mailto:lucronomiaofc@gmail.com?subject=Suporte%20-%20LucronomIA%20Confirma">lucronomiaofc@gmail.com</a>
+  </footer>
+</body>
+</html>
