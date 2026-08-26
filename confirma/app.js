@@ -4,6 +4,7 @@
   const API = "https://jxuazdoflabqerkccevi.supabase.co/functions/v1/confirma/api";
   const TOKEN_KEY = "lucronomia_confirma_wallet_v0";
   const LAST_CONFIRMATION_KEY = "lucronomia_confirma_last_confirmation_v0";
+  const REF_KEY = "lucronomia_confirma_ref_v0";
 
   let walletToken = "";
   let wallet = { balance: 0 };
@@ -20,6 +21,17 @@
   function tokenFromHash() {
     const params = new URLSearchParams(location.hash.replace(/^#/, ""));
     return params.get("wallet") || "";
+  }
+
+  function captureRef() {
+    const fromUrl = new URLSearchParams(location.search).get("ref");
+    if (fromUrl) {
+      localStorage.setItem(REF_KEY, fromUrl.trim().slice(0, 200));
+    }
+  }
+
+  function capturedRef() {
+    return localStorage.getItem(REF_KEY) || "";
   }
 
   function persistWalletToken(token) {
@@ -95,7 +107,7 @@
       track("buy_click", { package_code: packageCode });
       const data = await api("/checkout", {
         method: "POST",
-        body: JSON.stringify({ package_code: packageCode })
+        body: JSON.stringify({ package_code: packageCode, ref: capturedRef() })
       });
       sessionStorage.setItem("confirma_pending_order", data.order_id);
       location.href = data.checkout_url;
@@ -454,11 +466,12 @@
   }
 
   async function boot() {
+    captureRef();
     await ensureWallet();
     const packageData = await api("/packages");
     packages = packageData.packages;
     renderPackages();
-    track("landing_view");
+    track("landing_view", { ref: capturedRef() });
     await handlePaymentReturn();
     await restoreLastConfirmation();
   }
