@@ -36,6 +36,10 @@ header{position:sticky;top:0;z-index:50;background:var(--ink);border-bottom:1px 
 @keyframes confirma-spin{to{transform:rotate(360deg)}}
 .pix-note{color:var(--text-mute);font-size:.82rem;margin-top:-8px;margin-bottom:16px}
 
+#reminder-block{display:grid;gap:12px}
+.checkbox-field{flex-direction:row!important;align-items:flex-start;gap:10px;font-weight:400;font-size:.85rem;color:var(--text-mute)}
+.checkbox-field input[type=checkbox]{width:auto;margin-top:3px;accent-color:var(--highlight);flex:none}
+
 .hero{padding:72px 0}
 .hero h1{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(2.2rem,6vw,4rem);line-height:1.05;letter-spacing:-.01em;max-width:900px;margin:8px 0 20px}
 .hero h1 span{color:var(--highlight)}

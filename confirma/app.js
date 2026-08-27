@@ -81,6 +81,7 @@
 
   function renderBalance() {
     $("#wallet-pill").textContent = `Saldo: ${wallet.balance} confirmaç${wallet.balance === 1 ? "ão" : "ões"}`;
+    updateReminderBlock();
   }
 
   function money(cents) {
@@ -131,8 +132,15 @@
       paymentMethod: clean(data.get("paymentMethod")),
       deposit: clean(data.get("deposit")),
       details: clean(data.get("details")),
-      notes: clean(data.get("notes"))
+      notes: clean(data.get("notes")),
+      clientPhone: clean(data.get("clientPhone")),
+      reminderConsent: data.get("reminderConsent") === "on"
     };
+  }
+
+  function updateReminderBlock() {
+    const block = $("#reminder-block");
+    if (block) block.hidden = !wallet.lembrete_automatico_habilitado;
   }
 
   function renderDocument(data) {
@@ -401,6 +409,10 @@
     const required = [draft.providerName, draft.clientName, draft.service, draft.amount, draft.deadline, draft.paymentMethod];
     if (required.some((value) => !value)) {
       $("#form-error").textContent = "Preencha os campos obrigatórios.";
+      return;
+    }
+    if (draft.clientPhone && !draft.reminderConsent) {
+      $("#form-error").textContent = "Marque a autorização do cliente para usar o lembrete automático, ou deixe o WhatsApp em branco.";
       return;
     }
     $("#form-error").textContent = "";

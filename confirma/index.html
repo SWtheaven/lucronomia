@@ -77,6 +77,10 @@
           </label>
 
           <label>Entrada / sinal <small>opcional</small><input name="deposit" maxlength="120" placeholder="Ex.: R$ 200,00 ou 30%" autocomplete="off"></label>
+          <div class="full" id="reminder-block" hidden>
+            <label>WhatsApp do cliente <small>opcional — ativa o lembrete automático de cobrança</small><input name="clientPhone" type="tel" maxlength="20" placeholder="(11) 91234-5678" autocomplete="off"></label>
+            <label class="checkbox-field"><input type="checkbox" name="reminderConsent"><span>O cliente autorizou receber, pela LucronomIA, um lembrete automático de cobrança por WhatsApp caso o pagamento combinado não seja confirmado.</span></label>
+          </div>
           <label class="full">Detalhes adicionais <small>opcional</small><textarea name="details" maxlength="1200"></textarea></label>
           <label class="full">Observações <small>opcional</small><textarea name="notes" maxlength="800"></textarea></label>
         </div>
