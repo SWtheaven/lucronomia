@@ -444,25 +444,48 @@
   };
   document.querySelector("[data-start]").onclick = () => $("#form-section").scrollIntoView({ behavior: "smooth" });
 
+  function setPaymentBanner(text, { spinning = true } = {}) {
+    const banner = $("#payment-status-banner");
+    if (!banner) return;
+    banner.hidden = false;
+    banner.classList.toggle("spinning", spinning);
+    banner.querySelector("span").textContent = text;
+  }
+  function hidePaymentBanner() {
+    const banner = $("#payment-status-banner");
+    if (banner) banner.hidden = true;
+  }
+
   async function handlePaymentReturn() {
     const params = new URLSearchParams(location.search);
     const orderId = params.get("order") || sessionStorage.getItem("confirma_pending_order");
     if (!params.get("payment_return") || !orderId) return;
 
-    for (let attempt = 0; attempt < 6; attempt += 1) {
+    // Pix costuma demorar mais que cartão para confirmar: mantemos a checagem por até ~2 minutos,
+    // com o status sempre visível, em vez de desistir em silêncio depois de poucos segundos.
+    setPaymentBanner("Confirmando seu pagamento…");
+    for (let attempt = 0; attempt < 60; attempt += 1) {
       const status = await api(`/payment-status?order=${encodeURIComponent(orderId)}`).catch(() => null);
       if (status) {
         wallet.balance = status.balance;
         renderBalance();
         if (status.order.status === "approved") {
+          hidePaymentBanner();
           alert(`${status.order.expected_credits} confirmações adicionadas. Saldo atual: ${status.balance}.`);
           sessionStorage.removeItem("confirma_pending_order");
           history.replaceState({}, "", `${location.pathname}#wallet=${encodeURIComponent(walletToken)}`);
           return;
         }
+        if (["rejected", "cancelled"].includes(status.order.status)) {
+          setPaymentBanner("Pagamento não aprovado. Você pode tentar novamente ou escolher outra forma de pagamento.", { spinning: false });
+          sessionStorage.removeItem("confirma_pending_order");
+          setTimeout(hidePaymentBanner, 8000);
+          return;
+        }
       }
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      await new Promise((resolve) => setTimeout(resolve, 2000));
     }
+    setPaymentBanner("Ainda estamos confirmando seu pagamento — com Pix isso pode levar alguns minutos. Seu saldo atualiza sozinho assim que for aprovado; pode continuar navegando.", { spinning: false });
   }
 
   async function boot() {

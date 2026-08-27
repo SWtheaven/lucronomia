@@ -29,6 +29,13 @@ header{position:sticky;top:0;z-index:50;background:var(--ink);border-bottom:1px 
 .actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .pill{border:1px solid var(--line-dark);border-radius:999px;padding:7px 13px;color:var(--text-mute);font-family:'IBM Plex Mono',monospace;font-size:.8rem}
 
+.payment-status-banner{display:flex;align-items:center;justify-content:center;gap:10px;padding:12px 20px;background:rgba(0,255,136,.08);border-bottom:1px solid rgba(0,255,136,.25);color:var(--text);font-size:.88rem;text-align:center}
+.payment-status-banner[hidden]{display:none}
+.payment-status-banner .spinner{width:13px;height:13px;border-radius:50%;border:2px solid rgba(0,255,136,.25);border-top-color:var(--highlight);flex:none;visibility:hidden}
+.payment-status-banner.spinning .spinner{visibility:visible;animation:confirma-spin .8s linear infinite}
+@keyframes confirma-spin{to{transform:rotate(360deg)}}
+.pix-note{color:var(--text-mute);font-size:.82rem;margin-top:-8px;margin-bottom:16px}
+
 .hero{padding:72px 0}
 .hero h1{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(2.2rem,6vw,4rem);line-height:1.05;letter-spacing:-.01em;max-width:900px;margin:8px 0 20px}
 .hero h1 span{color:var(--highlight)}
