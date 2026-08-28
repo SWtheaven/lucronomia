@@ -1,46 +1,74 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Data deletion instructions for LucronomIA Lean." />
-  <title>Data Deletion — LucronomIA Lean</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exclusão de Dados — LucronomIA</title>
+  <meta name="description" content="Instruções de exclusão de dados do LucronomIA Lean: como desconectar plataformas e remover dados locais do painel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="shell legal">
-    <a class="text-link back" href="index.html">← Back to LucronomIA Lean</a>
-    <header class="hero compact">
-      <span class="eyebrow">LUCRONOMIA</span>
-      <h1>Data Deletion Instructions</h1>
-      <p class="lead">Last updated: August 21, 2026</p>
-    </header>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="index.html">
+          <img class="logo-mark" src="assets/logo-mark.png" alt="LucronomIA">
+          <span class="wordmark">Lucronom<span class="accent">IA</span></span>
+        </a>
+        <a class="back-link" href="index.html">← Voltar para a LucronomIA</a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="card">
-      <h2>1. Disconnect the platform</h2>
-      <p>Open LucronomIA Lean, go to Settings, and use the Disconnect action for the connected platform. This removes the locally stored authorization used by the dashboard to request new platform data.</p>
-    </section>
+  <main class="wrap">
+    <div class="legal-hero">
+      <div class="eyebrow">LucronomIA · documento legal</div>
+      <h1>Exclusão de Dados</h1>
+      <p class="legal-updated">Última atualização: 21 de agosto de 2026</p>
+    </div>
 
-    <section class="card">
-      <h2>2. Revoke platform authorization</h2>
-      <p>You may also revoke LucronomIA Lean directly from the connected platform's app or authorization settings. After revocation, LucronomIA Lean can no longer request new data with that authorization.</p>
-    </section>
+    <div class="legal-body">
+      <section class="legal-section">
+        <h2><span class="num">01</span>Desconectar a plataforma</h2>
+        <p>Abra o LucronomIA Lean, vá em Configurações e use a ação Desconectar na plataforma conectada. Isso remove a autorização armazenada localmente que o painel usa para solicitar novos dados da plataforma.</p>
+      </section>
 
-    <section class="card">
-      <h2>3. Delete local dashboard data</h2>
-      <p>LucronomIA Lean is a local-first application. To remove saved dashboard data, use the application's delete/reset or backup/restore controls where available, and remove the local application data from the computer or browser where the dashboard is running.</p>
-    </section>
+      <section class="legal-section">
+        <h2><span class="num">02</span>Revogar a autorização na plataforma</h2>
+        <p>Você também pode revogar o LucronomIA Lean diretamente nas configurações de apps ou autorizações da plataforma conectada. Depois da revogação, o LucronomIA Lean não consegue mais solicitar novos dados com essa autorização.</p>
+      </section>
 
-    <section class="card">
-      <h2>4. What is retained by this public website</h2>
-      <p>This public website does not store social-platform access tokens, refresh tokens, video analytics, or connected-account credentials.</p>
-    </section>
+      <section class="legal-section">
+        <h2><span class="num">03</span>Excluir os dados locais do painel</h2>
+        <p>O LucronomIA Lean é uma aplicação local-first. Para remover os dados salvos do painel, use os controles de excluir/reiniciar ou backup/restaurar disponíveis na aplicação, e remova os dados locais da aplicação do computador ou navegador onde o painel está rodando.</p>
+      </section>
 
-    <section class="card">
-      <h2>5. Questions</h2>
-      <p>For questions about deletion instructions, use the project repository:</p>
-      <p><a class="text-link" href="https://github.com/SWtheaven/lucronomia">github.com/SWtheaven/lucronomia</a></p>
-    </section>
+      <section class="legal-section">
+        <h2><span class="num">04</span>O que este site público retém</h2>
+        <p>Este site público não armazena tokens de acesso às plataformas sociais, tokens de renovação, análises de vídeo nem credenciais de contas conectadas.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2><span class="num">05</span>Dúvidas</h2>
+        <p>Para dúvidas sobre as instruções de exclusão, use o repositório do projeto:</p>
+        <p><a href="https://github.com/SWtheaven/lucronomia">github.com/SWtheaven/lucronomia</a></p>
+      </section>
+    </div>
   </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span>© 2026 LucronomIA</span>
+      <div class="footer-links">
+        <a href="privacy.html">Política de Privacidade</a>
+        <a href="terms.html">Termos de Uso</a>
+        <a href="data-deletion.html">Exclusão de Dados</a>
+        <a href="https://github.com/SWtheaven/lucronomia">GitHub</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

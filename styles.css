@@ -1,1 +1,62 @@
-:root{color-scheme:dark;--bg:#08100d;--panel:#0d1713;--line:#1c2d26;--text:#f4f7f5;--muted:#9bb0a6;--accent:#00ff88;--accent-soft:rgba(0,255,136,.12)}*{box-sizing:border-box}html,body{margin:0;padding:0;background:radial-gradient(circle at top,#102019 0,#08100d 38%,#050907 100%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit}.shell{width:min(980px,calc(100% - 32px));margin:0 auto;padding:64px 0 40px}.hero{padding:28px 0 34px}.hero.compact{padding-bottom:20px}.eyebrow{display:inline-block;color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.24em;margin-bottom:12px}.hero h1{font-size:clamp(2.4rem,8vw,5rem);line-height:.96;margin:0 0 20px;letter-spacing:-.045em}.lead{max-width:760px;color:var(--muted);font-size:1.08rem;margin:0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:linear-gradient(180deg,rgba(15,29,23,.95),rgba(10,20,16,.96));border:1px solid var(--line);border-radius:22px;padding:24px;margin:0 0 16px;box-shadow:0 20px 60px rgba(0,0,0,.22)}.card h2{font-size:1.05rem;margin:0 0 10px}.card p{color:var(--muted);margin:0 0 12px}.card p:last-child{margin-bottom:0}.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:18px}.button{display:inline-flex;align-items:center;justify-content:center;background:var(--accent);color:#02150c;text-decoration:none;font-weight:800;padding:10px 16px;border-radius:12px}.button.secondary{background:var(--accent-soft);color:var(--accent);border:1px solid rgba(0,255,136,.28)}.text-link{color:var(--accent);text-decoration:none;font-weight:700}.text-link:hover{text-decoration:underline}.back{display:inline-block;margin-bottom:18px}footer{display:flex;justify-content:space-between;gap:16px;color:#6f857a;font-size:.85rem;padding:20px 4px}.legal{max-width:860px}@media(max-width:700px){.grid{grid-template-columns:1fr}.shell{padding-top:32px}.hero h1{font-size:2.7rem}footer{flex-direction:column}}
+:root{
+  /* Tokens da baseline LucronomIA já validada em produção
+     (mesmos valores do <style> embutido na index e do Confirma) */
+  --ink: #08100d;
+  --ink-2: #0d1713;
+  --paper: #f7f8f7;
+  --line-dark: #1c2d26;
+  --line-light: #dce4df;
+  --highlight: #00ff88;
+  --highlight-ink: #02150c;
+  --clarity: #15613b;
+  --text: #f4f7f5;
+  --text-mute: #9bb0a6;
+  --text-dark: #132019;
+  --text-dark-mute: #4b5c54;
+  --radius: 4px;
+}
+*{ margin:0; padding:0; box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  background: var(--ink); color: var(--text);
+  font-family:'Inter',sans-serif; line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+a{ color:inherit; text-decoration:none; }
+img{ display:block; }
+.wrap{ max-width:820px; margin:0 auto; padding:0 24px; }
+
+/* ---------- HEADER ---------- */
+header{ position:sticky; top:0; z-index:50; background:var(--ink); border-bottom:1px solid var(--line-dark); }
+nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 0; gap:20px; }
+.brand{ display:flex; align-items:center; gap:12px; font-family:'Chakra Petch',sans-serif; font-weight:700; font-size:1.6rem; letter-spacing:0.005em; }
+.logo-mark{ display:block; flex-shrink:0; width:52px; height:52px; object-fit:contain; }
+.brand .accent{ color:var(--highlight); }
+.back-link{ font-family:'IBM Plex Mono',monospace; font-size:0.8rem; color:var(--text-mute); display:inline-flex; align-items:center; gap:6px; transition:color .2s ease; }
+.back-link:hover, .back-link:focus-visible{ color:var(--highlight); }
+
+/* ---------- LEGAL PAGE ---------- */
+.legal-hero{ padding:64px 0 40px; border-bottom:1px solid var(--line-dark); margin-bottom:48px; }
+.eyebrow{ font-family:'IBM Plex Mono',monospace; font-size:0.78rem; letter-spacing:0.1em; color:var(--highlight); text-transform:uppercase; margin-bottom:18px; display:flex; align-items:center; gap:10px; }
+.eyebrow::before{ content:''; width:22px; height:1px; background:var(--highlight); }
+h1{ font-family:'Chakra Petch',sans-serif; font-weight:700; font-size:clamp(1.9rem,4.5vw,2.6rem); line-height:1.15; letter-spacing:-0.01em; margin-bottom:14px; }
+.legal-updated{ font-family:'IBM Plex Mono',monospace; font-size:0.82rem; color:var(--text-mute); }
+
+.legal-body{ padding-bottom:80px; }
+.legal-section{ padding:28px 0; border-top:1px solid var(--line-dark); }
+.legal-section:first-child{ border-top:none; padding-top:0; }
+.legal-section h2{ font-family:'Chakra Petch',sans-serif; font-size:1.15rem; font-weight:600; letter-spacing:-0.005em; margin-bottom:12px; display:flex; align-items:baseline; gap:10px; }
+.legal-section h2 .num{ font-family:'IBM Plex Mono',monospace; font-size:0.85rem; color:var(--highlight); font-weight:600; flex-shrink:0; }
+.legal-section p{ color:var(--text-mute); font-size:0.96rem; max-width:68ch; }
+.legal-section p + p{ margin-top:12px; }
+.legal-section a{ color:var(--highlight); text-decoration:underline; text-decoration-color:rgba(0,255,136,0.35); text-underline-offset:3px; }
+.legal-section a:hover, .legal-section a:focus-visible{ text-decoration-color:var(--highlight); }
+
+/* ---------- FOOTER ---------- */
+footer{ border-top:1px solid var(--line-dark); padding:32px 0; }
+.footer-row{ display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:28px; font-size:0.85rem; color:var(--text-mute); text-align:center; }
+.footer-links{ display:flex; gap:20px; flex-wrap:wrap; }
+.footer-links a:hover, .footer-links a:focus-visible{ color:var(--text); }
+
+@media (max-width:600px){
+  .legal-hero{ padding:48px 0 32px; }
+}
