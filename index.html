@@ -143,7 +143,7 @@
   /* product teaser strip (Home) */
   .teaser-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
   @media (max-width:860px){ .teaser-grid{ grid-template-columns:1fr; } }
-  .teaser-card{ border:1px solid var(--line-dark); border-radius:var(--radius); padding:22px 20px; background:var(--ink-2); cursor:pointer; transition:border-color .2s ease, transform .2s ease; text-align:left; width:100%; color:var(--text); font-family:inherit; }
+  .teaser-card{ display:block; border:1px solid var(--line-dark); border-radius:var(--radius); padding:22px 20px; background:var(--ink-2); cursor:pointer; transition:border-color .2s ease, transform .2s ease; text-align:left; width:100%; color:var(--text); font-family:inherit; }
   .teaser-card:hover{ border-color:var(--text-mute); transform:translateY(-2px); }
   .teaser-card:focus-visible{ outline:2px solid var(--highlight); outline-offset:2px; }
   .badge{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:0.66rem; letter-spacing:0.05em; padding:3px 9px; border-radius:999px; margin-bottom:14px; text-transform:uppercase; }
@@ -335,125 +335,31 @@
 
   <!-- ================= PRODUTOS ================= -->
   <section id="produtos" class="tabpanel" role="tabpanel">
-
-    <details class="product" id="confirma">
-      <summary>
-        <div class="product-head">
-          <h2>Confirma</h2>
-          <span class="badge live">Disponível agora</span>
-        </div>
-        <p class="product-tag">Combinou pelo WhatsApp? Organize e confirme em 30 segundos.</p>
-        <span class="plus">+</span>
-      </summary>
-      <div class="product-body">
-
-      <div class="confirma-grid">
-        <div>
-          <div class="flow-steps">
-            <div class="flow-step"><span class="flow-num">1</span><div><strong>Preenche o combinado</strong><span>Serviço, valor, prazo e o que mais foi acertado com o cliente — sem ler WhatsApp, sem IA, é você que preenche.</span></div></div>
-            <div class="flow-step"><span class="flow-num">2</span><div><strong>Vê a prévia, de graça</strong><span>Preencher e visualizar não custa nada. Você só usa 1 crédito quando decide finalizar de verdade.</span></div></div>
-            <div class="flow-step"><span class="flow-num">3</span><div><strong>Finaliza e gera o PDF</strong><span>Documento profissional, pronto pra compartilhar direto no WhatsApp com o cliente.</span></div></div>
-          </div>
-
-          <h4 class="display" style="font-size:0.95rem; font-weight:600; margin-bottom:14px;">Pacotes de confirmações</h4>
-          <div class="pricing-grid">
-            <div class="price-card"><div class="credits">5</div><div class="price">R$ 9,90</div><div class="role">entrada</div></div>
-            <div class="price-card rec"><span class="rec-tag">recomendado</span><div class="credits">20</div><div class="price">R$ 24,90</div><div class="role">mais usado</div></div>
-            <div class="price-card"><div class="credits">50</div><div class="price">R$ 49,90</div><div class="role">menor custo por unidade</div></div>
-          </div>
-          <p style="color:var(--text-mute); font-size:0.85rem; margin-bottom:28px;">Pagamento único, sem mensalidade. Créditos não expiram.</p>
-
-          <a class="btn btn-primary" href="/confirma/">Abrir o Confirma</a>
-        </div>
-
-        <div>
-          <div class="transform-card" style="margin-bottom:18px;">
-            <div class="chat-stack">
-              <div class="bubble b1">Consigo fazer a instalação por R$350, fechado?</div>
-              <div class="bubble b2">Fechado! Pode ser sexta de manhã 👍</div>
-            </div>
-            <div class="arrow-down">vira</div>
-            <div class="result-card">
-              <div class="result-title">Confirmação <span class="status-pill">CLARO</span></div>
-              <div class="result-row"><span class="k">Serviço</span><span class="v">Instalação elétrica</span></div>
-              <div class="result-row"><span class="k">Valor</span><span class="v">R$ 350,00</span></div>
-              <div class="result-row"><span class="k">Prazo</span><span class="v">Sexta, manhã</span></div>
-            </div>
-          </div>
-          <div class="side-card">
-            <h4>O que o Confirma não é</h4>
-            <p>Pra deixar bem claro os limites do produto:</p>
-            <div class="not-list">
-              <span class="not-chip">CRM</span>
-              <span class="not-chip">Assinatura eletrônica</span>
-              <span class="not-chip">Contrato jurídico</span>
-              <span class="not-chip">Leitor de WhatsApp</span>
-              <span class="not-chip">Chatbot</span>
-              <span class="not-chip">Gerador com IA</span>
-              <span class="not-chip">ERP</span>
-            </div>
-          </div>
-          <div class="side-card">
-            <h4>Seu acesso</h4>
-            <p>Sem cadastro com e-mail e senha — você acessa sua carteira pessoal por um link único. Justamente por isso, trate esse link como algo pessoal.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="screenshot-frame">
-        <div class="screenshot-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="label">confirma — produto real em operação</span></div>
-        <img src="assets/previews/confirma.png" alt="Tela inicial do Confirma com os pacotes de créditos">
-      </div>
-      </div>
-    </details>
-
-    <details class="product" id="hub">
-      <summary>
-        <div class="product-head">
-          <h2>Hub de Concursos</h2>
-          <span class="badge soon">Em breve</span>
-        </div>
-        <p class="product-tag">Transforma o edital oficial de um concurso público num plano de estudos organizado — por cargo, com matérias e requisitos comprovados pelo próprio documento.</p>
-        <span class="plus">+</span>
-      </summary>
-      <div class="product-body">
-
-      <div class="preview-panel">
-        <div class="feature-check"><span class="dot">✓</span><div><strong>Baseado só no edital oficial</strong><span>Se a informação não está no documento, o Hub não inventa nem preenche por conta própria.</span></div></div>
-        <div class="feature-check"><span class="dot">✓</span><div><strong>Plano de estudos por cargo</strong><span>Requisitos, matérias gerais e específicas organizados pro cargo que você escolher.</span></div></div>
-        <div class="feature-check"><span class="dot">✓</span><div><strong>Evidência documentada</strong><span>Cada informação mostrada pode ser rastreada de volta à página exata do edital.</span></div></div>
-      </div>
-      <p style="color:var(--text-mute); font-size:0.88rem; margin-top:8px;">Em fase final de testes internos, ainda sem data pública de lançamento.</p>
-
-      <div class="screenshot-frame">
-        <div class="screenshot-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="label">hub de concursos — build interna, dados de exemplo zerados</span></div>
-        <img src="assets/previews/hub.png" alt="Tela inicial do Hub de Concursos, com visão geral do plano de estudos">
-      </div>
-      </div>
-    </details>
-
-    <details class="product" id="dashboard">
-      <summary>
-        <div class="product-head">
-          <h2>Painel de Dados</h2>
-          <span class="badge internal">Uso interno</span>
-        </div>
-        <p class="product-tag">Por trás da operação da LucronomIA existe um painel próprio que organiza conteúdo, métricas de redes sociais e, cada vez mais, dados de vendas — é como decidimos o que continuar fazendo.</p>
-        <span class="plus">+</span>
-      </summary>
-      <div class="product-body">
-      <div class="preview-panel">
-        <div class="feature-check"><span class="dot">✓</span><div><strong>Hoje: conteúdo e métricas</strong><span>Acompanha o desempenho do que publicamos em Instagram, TikTok e YouTube.</span></div></div>
-        <div class="feature-check"><span class="dot">✓</span><div><strong>Amanhã: receita e clientes</strong><span>Evoluindo para também mostrar vendas, recompra e origem dos clientes do Confirma.</span></div></div>
-      </div>
-      <p style="color:var(--text-mute); font-size:0.88rem; margin-top:8px;">Ferramenta interna por enquanto — pode virar produto no futuro.</p>
-
-      <div class="screenshot-frame">
-        <div class="screenshot-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="label">painel de dados — uso interno, nenhuma conta conectada</span></div>
-        <img src="assets/previews/painel.png" alt="Tela inicial do Painel de Dados interno da LucronomIA">
-      </div>
-      </div>
-    </details>
+    <div class="section-head" style="padding-top:88px;">
+      <div class="section-label">Portfólio</div>
+      <h2>Produtos</h2>
+      <p>Um resumo rápido de cada um. Clique para ver todos os detalhes, preços e telas reais.</p>
+    </div>
+    <div class="teaser-grid">
+      <a class="teaser-card" id="confirma" href="produtos/confirma.html">
+        <span class="badge live">Disponível agora</span>
+        <h3>Confirma</h3>
+        <p>Combinou pelo WhatsApp? Organize o que foi acertado com o cliente e gere um documento claro em segundos.</p>
+        <span class="go">Ver detalhes →</span>
+      </a>
+      <a class="teaser-card" id="hub" href="produtos/hub.html">
+        <span class="badge soon">Em breve</span>
+        <h3>Hub de Concursos</h3>
+        <p>Transforma o edital oficial de um concurso público num plano de estudos organizado, por cargo.</p>
+        <span class="go">Ver detalhes →</span>
+      </a>
+      <a class="teaser-card" id="dashboard" href="produtos/painel.html">
+        <span class="badge internal">Uso interno</span>
+        <h3>Painel de Dados</h3>
+        <p>O painel que organiza conteúdo, métricas de redes sociais e vendas — como decidimos o que continuar fazendo.</p>
+        <span class="go">Ver detalhes →</span>
+      </a>
+    </div>
   </section>
 
   <!-- ================= FAQ ================= -->

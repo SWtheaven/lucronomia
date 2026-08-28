@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel de Dados — LucronomIA</title>
+  <meta name="description" content="O painel interno que organiza conteúdo, métricas de redes sociais e vendas da operação da LucronomIA — como decidimos o que continuar fazendo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="produto.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="../index.html">
+          <img class="logo-mark" src="../assets/logo-mark.png" alt="LucronomIA">
+          <span class="wordmark">Lucronom<span class="accent">IA</span></span>
+        </a>
+        <a class="back-link" href="../index.html#produtos">← Voltar para Produtos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="product-hero">
+      <div class="eyebrow">LucronomIA · Ferramenta interna</div>
+      <span class="badge internal">Uso interno</span>
+      <h1>A inteligência que usamos pra decidir o que continuar fazendo.</h1>
+      <p class="lede">Por trás da operação da LucronomIA existe um painel próprio que organiza conteúdo, métricas de redes sociais e, cada vez mais, dados de vendas do Confirma. Roda localmente no computador do time — hoje é ferramenta interna, mas pode virar produto no futuro.</p>
+    </div>
+
+    <div class="screenshot-frame">
+      <div class="screenshot-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="label">painel de dados — uso interno, nenhuma conta conectada</span></div>
+      <img src="../assets/previews/painel.png" alt="Tela inicial do Painel de Dados interno da LucronomIA">
+    </div>
+
+    <section class="block">
+      <div class="section-head">
+        <div class="section-label">Estrutura</div>
+        <h2>Hoje: conteúdo e métricas. Cada vez mais: vendas.</h2>
+        <p>O painel acompanha o ciclo completo de um vídeo — uma entrada, três plataformas — e está evoluindo para também mostrar a origem real das vendas do Confirma.</p>
+      </div>
+      <div class="preview-panel">
+        <div class="feature-check"><span class="dot">✓</span><div><strong>Conteúdo e métricas</strong><span>Acompanha o desempenho do que publicamos em Instagram, TikTok e YouTube, com sincronização automática pelas APIs oficiais de cada plataforma.</span></div></div>
+        <div class="feature-check"><span class="dot">✓</span><div><strong>Vendas do Confirma</strong><span>Lê direto do banco de dados do Confirma: receita, funil de conversão, vendas por pacote, carteiras compradoras — sem depender de estimativa.</span></div></div>
+        <div class="feature-check"><span class="dot">✓</span><div><strong>Roteirização</strong><span>Banco de ideias, biblioteca de hooks e editor de roteiro (hook, desenvolvimento, payoff, CTA) num só lugar.</span></div></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="section-head">
+        <div class="section-label">Telas reais</div>
+        <h2>Como o painel é usado no dia a dia</h2>
+      </div>
+      <div class="screenshot-frame">
+        <div class="screenshot-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="label">conteúdos — uma entrada, três plataformas</span></div>
+        <img src="assets/painel-conteudos.png" alt="Tela de Conteúdos do Painel de Dados, sem nenhum conteúdo cadastrado">
+      </div>
+      <div class="screenshot-frame">
+        <div class="screenshot-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="label">roteirizador — oficina editorial</span></div>
+        <img src="assets/painel-roteirizador.png" alt="Tela do Roteirizador do Painel de Dados, sem nenhum roteiro salvo">
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="section-head">
+        <div class="section-label">Como roda</div>
+        <h2>Local-first, dados no computador do time</h2>
+      </div>
+      <div class="grid-2" style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+        <div class="side-card">
+          <h4>Onde os dados ficam</h4>
+          <p>O painel é uma aplicação local: os dados de conteúdo e roteiro ficam salvos no navegador de quem opera, e as chaves de conexão com as plataformas ficam num backend local — nunca embutidas neste site público.</p>
+        </div>
+        <div class="side-card">
+          <h4>Conexões oficiais</h4>
+          <p>YouTube, TikTok e Instagram são conectados via OAuth oficial de cada plataforma, com permissão somente leitura — o painel não publica, edita nem exclui nada nas redes conectadas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="section-head">
+        <div class="section-label">Transparência</div>
+        <h2>Documentos legais</h2>
+        <p>Como o painel se conecta a plataformas de terceiros, mantemos documentos públicos descrevendo exatamente o que é acessado e como excluir dados.</p>
+      </div>
+      <div class="teaser-grid">
+        <a class="teaser-card" href="../privacy.html">
+          <h3>Política de Privacidade</h3>
+          <p>Como o painel trata dados ao conectar plataformas de redes sociais.</p>
+          <span class="go">Ler →</span>
+        </a>
+        <a class="teaser-card" href="../terms.html">
+          <h3>Termos de Uso</h3>
+          <p>Escopo, uso somente leitura e responsabilidades da operação local.</p>
+          <span class="go">Ler →</span>
+        </a>
+        <a class="teaser-card" href="../data-deletion.html">
+          <h3>Exclusão de Dados</h3>
+          <p>Como desconectar plataformas e remover dados locais do painel.</p>
+          <span class="go">Ler →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="section-head">
+        <div class="section-label">Portfólio</div>
+        <h2>Outros produtos</h2>
+      </div>
+      <div class="teaser-grid">
+        <a class="teaser-card" href="confirma.html">
+          <span class="badge live">Disponível agora</span>
+          <h3>Confirma</h3>
+          <p>Combinou pelo WhatsApp? Organize o que foi acertado com o cliente e gere um documento claro em segundos.</p>
+          <span class="go">Ver detalhes →</span>
+        </a>
+        <a class="teaser-card" href="hub.html">
+          <span class="badge soon">Em breve</span>
+          <h3>Hub de Concursos</h3>
+          <p>Transforma o edital oficial de um concurso público num plano de estudos organizado, por cargo.</p>
+          <span class="go">Ver detalhes →</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="contact-box" style="margin:40px 0 56px;">
+      <div>
+        <h2 style="margin-bottom:6px;">Dúvidas sobre esta ferramenta?</h2>
+        <p style="color:var(--text-mute);">Fale com a gente pelo canal oficial.</p>
+      </div>
+      <a class="btn btn-primary" href="mailto:contato@lucronomia.com.br">contato@lucronomia.com.br</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span>© 2026 LucronomIA</span>
+      <div class="footer-links">
+        <a href="../privacy.html">Política de Privacidade</a>
+        <a href="../terms.html">Termos de Uso</a>
+        <a href="../data-deletion.html">Exclusão de Dados</a>
+        <a href="https://github.com/SWtheaven/lucronomia">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

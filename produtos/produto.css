@@ -1,0 +1,109 @@
+/* Componentes de página de produto — reaproveita os mesmos tokens/cabeçalho/rodapé
+   de ../styles.css. Extraído do <style> embutido na index.html para não duplicar
+   o mesmo bloco em 3 páginas e para não mexer no CSS já validado da index. */
+
+.mono{ font-family:'IBM Plex Mono',monospace; }
+.display{ font-family:'Chakra Petch',sans-serif; }
+.wrap{ max-width:1100px; }
+
+.product-hero{ padding:56px 0 48px; }
+.eyebrow{ font-family:'IBM Plex Mono',monospace; font-size:0.78rem; letter-spacing:0.1em; color:var(--highlight); text-transform:uppercase; margin-bottom:18px; display:flex; align-items:center; gap:10px; }
+.eyebrow::before{ content:''; width:22px; height:1px; background:var(--highlight); }
+h1{ font-family:'Chakra Petch',sans-serif; font-weight:700; font-size:clamp(2rem,4.5vw,3rem); line-height:1.12; letter-spacing:-0.01em; margin-bottom:16px; }
+h2{ font-family:'Chakra Petch',sans-serif; font-size:clamp(1.4rem,2.4vw,1.75rem); font-weight:600; letter-spacing:-0.01em; margin-bottom:12px; }
+h4{ font-family:'Chakra Petch',sans-serif; }
+.lede{ font-size:1.05rem; color:var(--text-mute); max-width:60ch; margin-bottom:28px; }
+.badge{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:0.66rem; letter-spacing:0.05em; padding:3px 9px; border-radius:999px; margin-bottom:14px; text-transform:uppercase; }
+.badge.live{ background:rgba(0,255,136,0.12); color:var(--highlight); border:1px solid rgba(0,255,136,0.35); }
+.badge.soon{ background:rgba(255,255,255,0.05); color:var(--text-mute); border:1px solid var(--line-dark); }
+.badge.internal{ background:rgba(255,255,255,0.05); color:var(--text-mute); border:1px solid var(--line-dark); }
+
+.btn{ display:inline-flex; align-items:center; gap:8px; padding:13px 22px; border-radius:var(--radius); font-weight:600; font-size:0.94rem; transition:transform 0.15s ease, background 0.2s ease, border-color .2s ease; border:1px solid transparent; }
+.btn-primary{ background:var(--highlight); color:var(--highlight-ink); }
+.btn-primary:hover{ transform:translateY(-1px); filter:brightness(1.06); }
+.btn-ghost{ background:transparent; border-color:var(--line-dark); color:var(--text); }
+.btn-ghost:hover{ border-color:var(--text-mute); transform:translateY(-1px); }
+
+section.block{ padding:52px 0; border-top:1px solid var(--line-dark); }
+.section-head{ max-width:640px; margin-bottom:32px; }
+.section-label{ font-family:'IBM Plex Mono',monospace; font-size:0.75rem; letter-spacing:0.1em; color:var(--highlight); text-transform:uppercase; margin-bottom:12px; }
+.section-head p{ color:var(--text-mute); font-size:1rem; }
+
+/* fluxo de passos (Confirma) */
+.flow-steps{ display:flex; flex-direction:column; gap:16px; margin-bottom:28px; }
+.flow-step{ display:flex; gap:14px; align-items:flex-start; }
+.flow-num{ flex-shrink:0; width:26px; height:26px; border-radius:50%; background:var(--ink-2); border:1px solid var(--line-dark); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:var(--highlight); }
+.flow-step strong{ display:block; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:0.98rem; margin-bottom:2px; }
+.flow-step span{ color:var(--text-mute); font-size:0.9rem; }
+
+/* pacotes/preços */
+.pricing-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:20px; }
+@media (max-width:640px){ .pricing-grid{ grid-template-columns:1fr; } }
+.price-card{ border:1px solid var(--line-dark); border-radius:var(--radius); padding:20px 18px; background:var(--ink-2); position:relative; }
+.price-card.rec{ border-color:var(--highlight); }
+.price-card .rec-tag{ position:absolute; top:-10px; right:14px; background:var(--highlight); color:var(--highlight-ink); font-family:'IBM Plex Mono',monospace; font-size:0.62rem; padding:2px 8px; border-radius:999px; letter-spacing:0.04em; }
+.price-card .credits{ font-family:'Chakra Petch',sans-serif; font-weight:700; font-size:1.3rem; margin-bottom:4px; }
+.price-card .price{ font-family:'IBM Plex Mono',monospace; color:var(--highlight); font-size:1rem; margin-bottom:6px; }
+.price-card .role{ color:var(--text-mute); font-size:0.82rem; }
+
+.not-list{ display:flex; flex-wrap:wrap; gap:8px; }
+.not-chip{ font-size:0.8rem; color:var(--text-mute); border:1px solid var(--line-dark); border-radius:999px; padding:5px 12px; }
+
+.side-card{ border:1px solid var(--line-dark); border-radius:var(--radius); padding:24px 22px; background:var(--ink-2); }
+.side-card + .side-card{ margin-top:18px; }
+.side-card h4{ font-size:0.95rem; font-weight:600; margin-bottom:10px; }
+.side-card p{ color:var(--text-mute); font-size:0.88rem; margin-bottom:14px; }
+.side-card p:last-child{ margin-bottom:0; }
+
+.preview-panel{ display:grid; grid-template-columns:1fr; gap:16px; }
+.feature-check{ display:flex; gap:12px; margin-bottom:14px; }
+.feature-check .dot{ flex-shrink:0; width:20px; height:20px; border-radius:50%; border:1.5px solid var(--highlight); color:var(--highlight); display:flex; align-items:center; justify-content:center; font-size:0.65rem; margin-top:2px; }
+.feature-check strong{ display:block; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:0.94rem; }
+.feature-check span{ color:var(--text-mute); font-size:0.87rem; }
+
+/* visual "mensagem vira documento" (Confirma) */
+.transform-card{ position:relative; }
+.chat-stack{ display:flex; flex-direction:column; gap:10px; margin-bottom:18px; }
+.bubble{ max-width:78%; padding:10px 14px; border-radius:14px; font-size:0.86rem; background:var(--ink-2); border:1px solid var(--line-dark); color:var(--text-mute); }
+.bubble.b1{ align-self:flex-start; border-bottom-left-radius:3px; }
+.bubble.b2{ align-self:flex-end; border-bottom-right-radius:3px; background:#1C2030; }
+.arrow-down{ display:flex; align-items:center; justify-content:center; gap:8px; color:var(--text-mute); font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; margin:6px 0 16px; }
+.arrow-down::before, .arrow-down::after{ content:''; height:1px; width:28px; background:var(--line-dark); }
+.result-card{ background:var(--paper); color:var(--text-dark); border-radius:6px; padding:22px 22px 24px; box-shadow:0 24px 48px -18px rgba(0,0,0,0.5); }
+.result-title{ display:flex; align-items:center; justify-content:space-between; font-family:'IBM Plex Mono',monospace; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-dark-mute); border-bottom:1px dashed var(--line-light); padding-bottom:12px; margin-bottom:14px; }
+.status-pill{ background:var(--clarity); color:#fff; padding:2px 10px; border-radius:999px; font-size:0.66rem; letter-spacing:0.04em; }
+.result-row{ display:flex; justify-content:space-between; gap:14px; padding:7px 0; font-size:0.88rem; border-bottom:1px dashed var(--line-light); }
+.result-row:last-child{ border-bottom:none; }
+.result-row .k{ color:var(--text-dark-mute); }
+.result-row .v{ font-weight:600; text-align:right; }
+
+/* screenshots reais */
+.screenshot-frame{ border:1px solid var(--line-dark); border-radius:10px; overflow:hidden; background:var(--ink-2); margin:28px 0; box-shadow:0 20px 50px -24px rgba(0,0,0,0.6); }
+.screenshot-bar{ display:flex; align-items:center; gap:6px; padding:10px 14px; border-bottom:1px solid var(--line-dark); }
+.screenshot-bar .dot{ width:8px; height:8px; border-radius:50%; background:var(--line-dark); }
+.screenshot-bar .label{ margin-left:8px; font-family:'IBM Plex Mono',monospace; font-size:0.68rem; color:var(--text-mute); letter-spacing:0.03em; }
+.screenshot-frame img{ width:100%; display:block; }
+
+/* FAQ do produto */
+.faq-list{ max-width:760px; }
+details.faq-item{ border-bottom:1px solid var(--line-dark); padding:18px 0; }
+details.faq-item summary{ cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px; font-family:'Chakra Petch',sans-serif; font-weight:600; font-size:1rem; }
+details.faq-item summary::-webkit-details-marker{ display:none; }
+details.faq-item summary .plus{ font-family:'IBM Plex Mono',monospace; color:var(--highlight); font-size:1.1rem; flex-shrink:0; transition:transform .2s ease; }
+details.faq-item[open] summary .plus{ transform:rotate(45deg); }
+details.faq-item p{ color:var(--text-mute); font-size:0.94rem; margin-top:12px; max-width:64ch; }
+
+/* outros produtos (rodapé de navegação cruzada) */
+.teaser-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+@media (max-width:860px){ .teaser-grid{ grid-template-columns:1fr; } }
+.teaser-card{ display:block; border:1px solid var(--line-dark); border-radius:var(--radius); padding:22px 20px; background:var(--ink-2); transition:border-color .2s ease, transform .2s ease; text-align:left; color:var(--text); }
+.teaser-card:hover{ border-color:var(--text-mute); transform:translateY(-2px); }
+.teaser-card h3{ font-family:'Chakra Petch',sans-serif; font-size:1.05rem; font-weight:600; margin-bottom:8px; }
+.teaser-card p{ color:var(--text-mute); font-size:0.9rem; }
+.teaser-card .go{ display:block; margin-top:14px; font-size:0.82rem; color:var(--highlight); font-weight:600; }
+
+.contact-box{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:22px; border:1px solid var(--line-dark); border-radius:var(--radius); padding:32px 28px; background:var(--ink-2); margin-top:8px; }
+
+@media (max-width:880px){
+  .grid-2{ grid-template-columns:1fr !important; }
+}
