@@ -50,6 +50,7 @@ h1{ font-family:'Chakra Petch',sans-serif; font-weight:700; font-size:clamp(1.9r
 .legal-section p + p{ margin-top:12px; }
 .legal-section a{ color:var(--highlight); text-decoration:underline; text-decoration-color:rgba(0,255,136,0.35); text-underline-offset:3px; }
 .legal-section a:hover, .legal-section a:focus-visible{ text-decoration-color:var(--highlight); }
+.legal-section code{ font-family:'IBM Plex Mono',monospace; font-size:0.85em; background:var(--ink-2); border:1px solid var(--line-dark); border-radius:3px; padding:1px 6px; color:var(--text); }
 
 /* ---------- FOOTER ---------- */
 footer{ border-top:1px solid var(--line-dark); padding:32px 0; }

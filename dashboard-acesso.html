@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LucronomIA</title>
+  <meta name="description" content="Para que serve o aplicativo LucronomIA que conecta YouTube, Instagram e TikTok ao Painel de Dados interno, e quais dados ele acessa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="index.html">
+          <img class="logo-mark" src="assets/logo-mark.png" alt="LucronomIA">
+          <span class="wordmark">Lucronom<span class="accent">IA</span></span>
+        </a>
+        <a class="back-link" href="index.html">← Voltar para a LucronomIA</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="legal-hero">
+      <div class="eyebrow">LucronomIA · sobre este aplicativo</div>
+      <h1>LucronomIA</h1>
+      <p class="legal-updated">Última atualização: 28 de agosto de 2026</p>
+    </div>
+
+    <div class="legal-body">
+      <section class="legal-section">
+        <h2><span class="num">01</span>O que é o aplicativo "LucronomIA"</h2>
+        <p>"LucronomIA" é o nome do aplicativo que a equipe da LucronomIA usa internamente para conectar contas de YouTube, Instagram e TikTok ao Painel de Dados (Dashboard Lean) — a ferramenta interna descrita em <a href="produtos/painel.html">Painel de Dados</a>.</p>
+        <p>Este aplicativo não é um produto público. Ele existe para que a própria equipe da LucronomIA consolide, num único painel local, as métricas do conteúdo que ela mesma publica.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2><span class="num">02</span>Para que ele é usado</h2>
+        <p>O aplicativo lê métricas de desempenho de vídeos e publicações já feitos pela própria conta conectada — visualizações, curtidas, comentários, alcance e métricas equivalentes — exclusivamente para apoiar decisões editoriais internas da equipe: o que publicar de novo, o que teve melhor desempenho, o que ajustar.</p>
+        <p>O aplicativo não publica, edita nem exclui conteúdo em nenhuma das plataformas conectadas. O acesso solicitado é sempre de leitura.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2><span class="num">03</span>Dados acessados, por plataforma</h2>
+        <p><strong>YouTube</strong> — o aplicativo solicita dois escopos de acesso somente leitura do Google: <code>youtube.readonly</code> (ver os dados do canal e os vídeos da conta conectada) e <code>yt-analytics.readonly</code> (ler relatórios do YouTube Analytics da conta conectada, como visualizações, tempo assistido e inscritos gerados por vídeo).</p>
+        <p><strong>Instagram</strong> — acesso de leitura à conta profissional conectada (identificação básica da conta) e às métricas de desempenho (insights) das publicações dessa conta.</p>
+        <p><strong>TikTok</strong> — acesso de leitura à identificação básica da conta conectada e à lista de vídeos publicados por ela, para coletar as métricas de cada vídeo.</p>
+        <p>Em nenhuma plataforma o aplicativo solicita permissão para publicar, editar, excluir conteúdo ou gerenciar mensagens/comentários em nome da conta.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2><span class="num">04</span>O que não fazemos com esses dados</h2>
+        <p>Não compartilhamos, vendemos nem usamos os dados lidos dessas plataformas para qualquer finalidade além do acompanhamento interno de desempenho de conteúdo descrito acima. Os detalhes de armazenamento, compartilhamento e como revogar o acesso estão na <a href="privacy.html">Política de Privacidade</a>.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2><span class="num">05</span>Contato</h2>
+        <p>Para dúvidas sobre este aplicativo, use o repositório mantido pelo responsável do projeto:</p>
+        <p><a href="https://github.com/SWtheaven/lucronomia">github.com/SWtheaven/lucronomia</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span>© 2026 LucronomIA</span>
+      <div class="footer-links">
+        <a href="privacy.html">Política de Privacidade</a>
+        <a href="terms.html">Termos de Uso</a>
+        <a href="data-deletion.html">Exclusão de Dados</a>
+        <a href="dashboard-acesso.html">Sobre o Painel de Dados</a>
+        <a href="https://github.com/SWtheaven/lucronomia">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
